@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<div class="container py-5">
+	{% include 'partials/_alerts.html' %}
+	<h1>CRUD HOME </h1><small>All members data</small>
+	{% if members %}
+	<table class="table">
+		<thead class="bg-primary text-white">
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+		<th>Designation</th>
+		<th>Action</th>
+		</thead>
+		<tbody>
+		{% for member in members %}
+		<tr>
+			<td>{{ member.name }}</td>
+			<td>{{ member.email }}</td>
+			<td>{{ member.phone }}</td>
+			<td>
+				{% if member.designation %}
+				{{ member.designation }}
+				{% else %}
+				<span class="text-warning">No designation set</span>
+				{% endif %}
+			</td>
+			<td>
+				<a class="text-success" title="Edit" href="{% url 'edit' member.id %}"><i class="fas fa-edit"></i></a>
+				|| <a class="text-danger" href="{% url 'delete' member.id %}"><i class="fas fa-trash-alt"></i></a>
+			</td>
+		</tr>
+		{% endfor%}
+		</tbody>
+	</table>
+	{% else %}
+	<p class="alert alert-danger alert-dismissible">No member found in list</p>
+	{% endif %}
+</div>
+{% endblock %}

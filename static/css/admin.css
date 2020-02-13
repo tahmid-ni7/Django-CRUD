@@ -1,0 +1,34 @@
+#header{
+    background-color: #283E60;
+    color: #ffffff;
+}
+#branding h1{
+    color: #fff;
+}
+a:link,
+a:visited{
+    color: #283E60;
+}
+div.breadcrumbs{
+    background-color: #6a0002;
+}
+.module caption, .inline-group h2 {
+    background-color: #6a0002;
+}
+input[type="submit"], button {
+    background-color: #10284E;
+    color: #fff;
+}
+input[type="submit"], button:hover{
+    background-color: #10284E;
+}
+.module h2, .module caption, .inline-group h2 {
+     background-color: #6a0002;!important;
+}
+.selector-chosen h2{
+    background-color: #6a0002;!important;
+}
+.module caption, .inline-group h2 {
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+
+/*=========== error message CSS ========*/
+ul.errorlist li {
+    list-style: none;
+    color: #c00500;
+}
+
+ul.errorlist {
+    padding: 0;
+    margin: 0;
+}
