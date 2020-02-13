@@ -52,8 +52,8 @@ def update(request, member_id):
         else:
             messages.error(request, 'Please fill all fields correctly.')
 
-    context = {'form': form}
-    return render(request, 'crud/create.html', context)
+    context = {'form': form,'member': member}
+    return render(request, 'crud/edit.html', context)
 
 
 # ========== DELETE MEMBER ==========
