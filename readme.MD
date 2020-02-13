@@ -1,7 +1,7 @@
 ## Django CRUD app
 This is a complete Django crud app with proper form validation
 and bootstrap design at form. Here I make form with ModelForm class.
-This app developed with django 2.2.5 and bootstrap-4.
+This app developed with django 2.2.5 and bootstrap-4. Here I use django's default alert messages and costomize admin area little bit.
 
 #### Live Demo
 I deployed this crud app into pythonanywhere.com.
